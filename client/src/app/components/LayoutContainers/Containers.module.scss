@@ -1,0 +1,123 @@
+
+*::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.lhsCard {
+  border-radius: 4;
+  margin: 16px;
+  height: 50px;
+  background-color: lightslategrey;
+}
+
+.rhsCard {
+  border-radius: 4;
+  margin: 16px;
+  height: 125px;
+  background-color: #1a62d5;
+}
+
+.scroll {
+  overflow: auto;
+}
+
+.FlexContainer {
+  flex: 1;
+}
+
+.NarrowContainer {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.ViewHorizontalContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.VerticalContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ViewVerticalContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.CenteredContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ViewCenteredContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h3 {
+    position: absolute;
+    top: 50%;
+  }
+}
+
+.scrollingRoot {
+  display: flex;
+  flex-direction: row;
+  user-select: none;
+  position: relative;
+
+  .ArrowLeft,
+  .ArrowRight {
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .ArrowLeft {
+    left: 0;
+    text-align: left;
+    background: linear-gradient(to left, rgba(248, 250, 252, 0), rgba(248, 250, 252, 1) 70%);
+  }
+
+  .ArrowRight {
+    right: 0;
+    text-align: right;
+    background: linear-gradient(to right, rgba(248, 250, 252, 0), rgba(248, 250, 252, 1) 70%);
+  }
+}
+
+.slidingContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.slidingContent {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+
+  & > div {
+    flex: 1;
+  }
+}

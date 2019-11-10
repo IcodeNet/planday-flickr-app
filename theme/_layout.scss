@@ -1,0 +1,68 @@
+@import './palette.scss';
+
+$element-spacing: 10px;
+$element-spacing-half: 5px;
+$element-spacing-none: 0;
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+.scroll-y {
+  overflow-y: scroll;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.shift-left {
+  float: left;
+}
+
+.shift-right {
+  float: right;
+}
+ 
+.two-column-33-66 {
+  height: 100%;
+
+  .left {
+    width: 33.3333333333%;
+  }
+
+  .right {
+    width: 66.6666666666%;
+  }
+
+  & > div:last-child {
+    padding: $element-spacing-none;
+  }
+}
+
+.card-layout {
+  display: flex;
+  flex-direction: column;
+
+  .card-content {
+    flex: 1;
+  }
+}
+
+.cardHeader {
+  height: 50px;
+  line-height: 50px;
+  background-color: $card-header-bg;
+  color: $card-header-font;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.4em;
+}
+ 

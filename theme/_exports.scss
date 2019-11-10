@@ -1,0 +1,8 @@
+// Make sure you don't import anything that generates output
+@import './variables';
+
+// Make sure you don't define anything, or generate any output. Only export.
+// https://github.com/css-modules/icss
+:export {
+  font-family-base: $font-family-base;
+}

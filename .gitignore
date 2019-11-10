@@ -1,0 +1,44 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/dist
+
+# Dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+/.vscode/*
+!/.vscode/extensions.json
+!/.vscode/settings.json
+!/.vscode/team-snippets.code-snippets
+
+# Misc
+/coverage
+*.log
+*.tgz
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Plato Assets
+report/assets
+report/files
+report/display.html
+report/index.html
+
+# Infrastructure Dependencies
+infrastructure/node_modules/
+
+# Storybook Dependencies
+storybook-static/
+
+# This below Once Cypress is enabled by running "npm run uxtest"  will have to be commented out
+e2e/cypress/integration/examples
+e2e/node_modules/
+e2e/**/*(failed)*
+
+*.orig
+webpack/bundle-stats.html
+webpack/stats.json

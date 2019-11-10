@@ -1,0 +1,54 @@
+@import './variables';
+
+$main-font:                     $white;
+$dark-font:                     $dark-grey;
+
+$card-header-bg:                $base-blue;
+$card-header-font:              $white;
+
+$banner-bg:                     $dark-red;
+
+$time-button-bg:                $lighter-grey;
+$time-button-border:            $base-grey;
+$time-button-off-bg:            $base-grey;
+$time-button-inv-font:          $lighter-grey;
+$time-button-next-bg:           $base-green;
+$time-button-disabled-font:     $base-grey;
+
+$dark-panel-bg:                 $darker-grey;
+$dark-panel-bg-transparent:     $darker-grey-50;
+$dark-panel-active:             $lighter-blue;
+
+$background-light: #fff;
+$background-appbar: #f8fafc;
+$background-main: #e4e4e4;
+$background-panel: #eff0f2;
+$background-dark-2: #172b4d;
+$background-blue: #0a5bab;
+
+$border-main: #ebedef;
+$border-input: #ccc;
+
+$accent-main: #555;
+$accent-light: #9d9d9d;
+$accent-lighter: #e3e3e3;
+
+$deep-purple: #21145f;
+$notification-red: #e82128;
+
+$cta-green: #10b14a;
+$cta-green-border: #08965a;
+
+$deep-purple-D20: shade($deep-purple, 20%);
+$deep-purple-D30: shade($deep-purple, 30%);
+$deep-purple-L50: tint($deep-purple, 50%);
+$deep-purple-L60: tint($deep-purple, 60%);
+$deep-purple-L80: tint($deep-purple, 80%);
+
+$grey-D20: shade($grey, 20%);
+$grey-L20: tint($grey, 20%);
+$grey-L50: tint($grey, 50%);
+$grey-L60: tint($grey, 60%);
+
+$input-padding-vertical: 10px;
+$input-padding-horizontal: 15px;

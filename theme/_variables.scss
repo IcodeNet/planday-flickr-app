@@ -1,0 +1,75 @@
+// DO NOT USE mixins or functions here as variables come first
+// FONTS
+$font-family-base: 'Exo', sans-serif;
+$font-size-large: 16px;
+$font-size-base: 14px;
+$font-size-small: 12px;
+
+// FONT WEIGHTS
+$font-weight-light: 200;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+
+$icon-font-family: 'planday-icons';
+$icon-font-size-base: 14px;
+
+$icon-padding-x-base: 2px !default;
+$icon-padding-x-small: 2px !default;
+$icon-padding-x-large: 4px !default;
+
+$icon-padding-y-base: 0 !default;
+$icon-padding-y-small: 2px !default;
+$icon-padding-y-large: 4px !default;
+
+$icon-padding-base: $icon-padding-y-base $icon-padding-x-base !default;
+$icon-padding-small: $icon-padding-y-small $icon-padding-x-small !default;
+$icon-padding-large: $icon-padding-y-large $icon-padding-x-large !default;
+
+$icon-font-path: '/fonts' !default;
+
+@font-face {
+  font-family: '#{$icon-font-family}';
+  font-display: swap;
+  src: url('#{$icon-font-path}/#{$icon-font-family}.ttf') format('truetype'),
+  url('#{$icon-font-path}/#{$icon-font-family}.woff') format('woff'),
+  url('#{$icon-font-path}/#{$icon-font-family}.svg##{$icon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$icon-font-size-xx-large: 45px;
+$icon-font-size-x-large: 25px;
+$icon-font-size-large: 16px;
+$icon-font-size-base: 14px;
+$icon-font-size-small: 12px;
+$icon-font-size-x-small: 8px;
+
+//COLOURS
+$lighter-blue:    #60a8ed;
+$light-blue:      #3581cb;
+$base-blue:       #0a5bab;
+$dark-blue:       #1b397f;
+
+$base-green:      #10b14a;
+$green:           #48d238;
+
+$grey:            #444;
+$grey-light:      #ccc;
+$lighter-grey:    #efefef;
+$light-grey:      #e4e4e4;
+$base-grey:       #d2d2d2;
+$dark-grey:       #424250;
+$darker-grey:     #323232;
+$darker-grey-50:  rgba(50, 50, 50, 0.4);
+
+$black:           #000;
+$white:           #fff;
+
+$red:             #e82128;
+$dark-red:        #a32550;
+
+$base-orange:     #ffa500;
+$base-brown:      #8a641d;
+ 
+
+

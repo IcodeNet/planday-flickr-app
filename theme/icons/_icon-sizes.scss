@@ -1,0 +1,39 @@
+@import 'icon-variables';
+@import 'icon-classes';
+@import 'icon-classes';
+@import '../mixins/mixins-helpers';
+
+@include classname-startsWith('icon-') {
+  @include all-icons();
+}
+
+@include classname-startsWith('icon-') {
+  &.icon-xx-lg {
+    font-size: $icon-font-size-xx-large !important;
+    font-weight: 900;
+  }
+}
+
+@include classname-startsWith('icon-') {
+  &.icon-x-lg {
+    font-size: $icon-font-size-x-large !important;
+  }
+}
+
+@include classname-startsWith('icon-') {
+  &.icon-lg {
+    font-size: $icon-font-size-large !important;
+  }
+}
+
+@include classname-startsWith('icon-') {
+  &.icon-sm {
+    font-size: $icon-font-size-small !important;
+  }
+}
+
+@include classname-startsWith('icon-') {
+  &.icon-x-sm {
+    font-size: $icon-font-size-x-small !important;
+  }
+}

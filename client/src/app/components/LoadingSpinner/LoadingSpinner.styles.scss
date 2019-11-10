@@ -1,0 +1,111 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// Used by both .loading and .spinner
+$large-spinner-diameter: 80px;
+
+.spinner {
+  $spinner-colour-primary: #21145f;
+  $spinner-colour-secondary: mix(white, #21145f, 50%);
+  $large-ring-width: 9px;
+  $medium-spinner-diameter: 40px;
+  $medium-spinner-ring-width: 6px;
+  $small-spinner-diameter: 20px;
+  $small-spinner-ring-width: 3px;
+
+  %spinner {
+    animation: spin 1.25s linear infinite;
+    border: $large-ring-width solid $spinner-colour-primary;
+    border-radius: 50%;
+    border-top: $large-ring-width solid $spinner-colour-secondary;
+    height: $large-spinner-diameter;
+    margin: 10px auto;
+    position: relative;
+    width: $large-spinner-diameter;
+  }
+
+  .spinner-lg {
+    @extend %spinner;
+  }
+
+  .spinner-md {
+    border-width: $medium-spinner-ring-width;
+    height: $medium-spinner-diameter;
+    width: $medium-spinner-diameter;
+
+    @extend %spinner;
+  }
+
+  .spinner-sm {
+    border-width: $small-spinner-ring-width;
+    height: $small-spinner-diameter;
+    width: $small-spinner-diameter;
+
+    @extend %spinner;
+  }
+
+  .spinner-mask {
+    display: none;
+  }
+}
+
+.loading {
+  $spinner-masked-opacity: 0.5;
+  $spinner-masked-color: '#cccccc';
+
+  &.placeholder {
+    width: 100vw;
+    min-height: $large-spinner-diameter + 10px; //  - min-height ensures it contains the spinner
+    position: relative; // Allows spinner to be absolutely positioned relative to this as the anchor
+
+    > *:first-child {
+      color: $spinner-masked-color;
+      opacity: $spinner-masked-opacity;
+    }
+  }
+
+  &.modal-dialog {
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+      color: $spinner-masked-color;
+      opacity: $spinner-masked-opacity;
+    }
+  }
+
+  .spinner {
+    .spinner-mask {
+      bottom: 0;
+      cursor: progress;
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .spinner-lg,
+    .spinner-md {
+      left: 50%;
+      margin-left: -40px;
+      margin-top: -40px;
+      position: absolute;
+      top: 50%;
+      z-index: 1001;
+    }
+  }
+}
+
+.card + .loading.placeholder,
+.loading.placeholder + .card,
+.loading.placeholder + .loading.placeholder {
+  margin-top: 4rem;
+}

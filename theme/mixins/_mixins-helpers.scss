@@ -1,0 +1,7 @@
+
+@mixin classname-startsWith($prefix) {
+  [class^='#{$prefix}'],
+  [class*=' #{$prefix}'] {
+    @content;
+  }
+}

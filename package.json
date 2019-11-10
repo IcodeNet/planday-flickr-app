@@ -1,0 +1,25 @@
+{
+  "name": "flickr-react-app-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "npm run gen:vars && npm run  gen:mixins && npm run  gen:classes",
+    "gen:mixins": "node generators/createIconMixinsFromXML.js",
+    "gen:classes": "node generators/createIconClassesFromXML.js",
+    "gen:vars": "node generators/createIconVariablesFromXML.js"
+  },
+  "author": "Byron Thanopoulos <byronth@gmail.com> (http://www.github.com/icodenet)",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "node-xml-stream": "1.0.2",
+    "react-router": "^5.1.2",
+    "xml2js": "0.4.22",
+    "xmlhttprequest": "1.8.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "cz-customizable": "^6.2.0"
+  }
+}

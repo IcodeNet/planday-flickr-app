@@ -1,0 +1,4 @@
+{
+  "apiBaseUrl": "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=748c099de145d35660505013da5a508a&text=${term}&format=json&nojsoncallback=1",
+  "timeout": 3000
+}

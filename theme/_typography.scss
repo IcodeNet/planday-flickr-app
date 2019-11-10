@@ -1,0 +1,24 @@
+body {
+  font-family: $font-family-base;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  color: #12161B;
+  font-size: 1.1em;
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.06px;
+}
+
+button {
+  font-family: $font-family-base;
+}
+
+i.cta {
+  cursor: pointer;
+}

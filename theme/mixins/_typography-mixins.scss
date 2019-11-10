@@ -1,0 +1,24 @@
+@mixin body-1() {
+  font-size: $font-size-large;
+  font-weight: $font-weight-normal;
+}
+
+@mixin body-2() {
+  font-size: $font-size-large;
+  font-weight: $font-weight-bold;
+}
+
+@mixin body-3() {
+  font-size: $font-size-base;
+  font-weight: $font-weight-light;
+}
+
+@mixin body-4() {
+  font-size: $font-size-base;
+  font-weight: $font-weight-bold;
+}
+
+@mixin h1() {
+  font-size: $h1-font-size;
+  font-weight: $font-weight-light;
+}
