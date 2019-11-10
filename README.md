@@ -1,4 +1,31 @@
-# The aim of this package is to extract the codes for icons that are in an .svg file
+# This FLickr react app was created to demo some code practises. 
+
+### The app is hosted in firebase and can be seen in action here https://planday-fkickr-react-app.firebaseapp.com/
+
+## Start
+ ```
+ // from the root folder
+
+ > cd client 
+ > npm i
+ > npm start
+
+ // start developing
+ 
+ ```
+
+### Features
+- SCSS Theming
+- CSS Modules
+- React hooks, context
+- Webpack
+- Semantic Versioning
+- Jest
+- Husky
+- ... more to come
+
+
+## There is a second package (flickr-react-app-theme) in the root of the project and it aim is to extract the codes for icons that are in an .svg file to subsequently used in the `client` app.
 
 We want to be able to produce a list of `scss variables` and `mixins` that could then together with some other files form the theme in our react application.
 
