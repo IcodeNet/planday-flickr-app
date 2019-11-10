@@ -19,7 +19,8 @@
     "release": "standard-version",
     "dryrun": "npm run release -- --dry-run",
     "outdated": "npm-check -u",
-    "verify": "npm run lint && npm run lint:scss && npm run test && npm run pretty"
+    "verify": "npm run lint && npm run lint:scss && npm run test && npm run pretty",
+    "deploy": "npm run build:prod && firebase deploy"
   },
   "author": "Byron Thanopoulos for Planday",
   "license": "ISC",
