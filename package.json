@@ -4,7 +4,9 @@
   "description": "",
   "main": "",
   "scripts": {
-    "start": "npm run gen:vars && npm run  gen:mixins && npm run  gen:classes",
+    "start": "npm run gen:init && npm run gen:normalise && npm run gen:vars && npm run  gen:mixins && npm run  gen:classes",
+    "gen:init": "node generators/init.js",
+    "gen:normalise": "node generators/normalise.js",
     "gen:mixins": "node generators/createIconMixinsFromXML.js",
     "gen:classes": "node generators/createIconClassesFromXML.js",
     "gen:vars": "node generators/createIconVariablesFromXML.js"
