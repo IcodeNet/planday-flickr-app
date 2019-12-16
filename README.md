@@ -38,13 +38,6 @@ run `npm i` to install the packages
 
 Open the project with VSCode and make sure that you replace the font files under `theme\fonts` with your files.
 
-Then using the `.svg` file - in our case is `planday-icons.svg` - we need to do two things:
-
-- copy the file in the same directory and change it's extension to `.xml` from `.svg`
-- Globaly run a rename in the file the `glyph-name` attribute to `name`. This is because the name `glyph-name` canno be handled by our parser.
-
-## Finaly 
-
 Then from the command line type the following:
 
 `npm start`
