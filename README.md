@@ -1,5 +1,7 @@
 # This FLickr react app was created to demo some code practises. 
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/IcodeNet/planday-flickr-app.svg)](https://greenkeeper.io/)
+
 ### The app is hosted in firebase and can be seen in action here https://planday-fkickr-react-app.firebaseapp.com/
 
 ## Start
