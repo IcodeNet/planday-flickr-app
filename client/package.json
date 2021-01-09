@@ -172,7 +172,7 @@
     "react-global-configuration": "^1.4.0",
     "react-ink": "^6.4.0",
     "react-router-dom": "^5.1.2",
-    "react-switch": "^5.0.1",
+    "react-switch": "^6.0.0",
     "react-touch-ripple": "^0.2.1",
     "rxjs": "^6.5.3",
     "socket.io": "^2.3.0",
