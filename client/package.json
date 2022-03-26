@@ -175,8 +175,8 @@
     "react-switch": "^5.0.1",
     "react-touch-ripple": "^0.2.1",
     "rxjs": "^6.5.3",
-    "socket.io": "^2.3.0",
-    "socket.io-client": "^2.3.0"
+    "socket.io": "^4.0.0",
+    "socket.io-client": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
