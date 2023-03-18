@@ -273,7 +273,7 @@
     "jsdoc": "^3.6.3",
     "lighthouse": "^5.6.0",
     "mock-location": "^0.2.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^5.0.0",
     "nodemon": "^1.19.4",
     "npm-check": "^5.9.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
